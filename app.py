@@ -50,6 +50,14 @@ def get_color(soil_type):
         return "Brown"
 
 # =========================
+# Home Route (للمتصفح)
+# =========================
+
+@app.route("/", methods=["GET"])
+def home():
+    return "API is working"
+
+# =========================
 # API (واحد بس للحالتين)
 # =========================
 
